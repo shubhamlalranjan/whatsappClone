@@ -12,7 +12,7 @@ import { Fontisto } from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import TabOneScreen from "../screens/TabOneScreen";
-import TabTwoScreen from "../screens/TabTwoScreen";
+import ChatsScreen from "../screens/ChatsScreen";
 import { MainTabParamList, TabOneParamList, TabTwoParamList } from "../types";
 
 const MainTab = createMaterialTopTabNavigator<MainTabParamList>();
@@ -88,7 +88,7 @@ function TabTwoNavigator() {
     <TabTwoStack.Navigator screenOptions={{ headerShown: false }}>
       <TabTwoStack.Screen
         name="TabTwoScreen"
-        component={TabTwoScreen}
+        component={ChatsScreen}
         options={{ headerTitle: "Tab Two Title" }}
       />
     </TabTwoStack.Navigator>
