@@ -5,6 +5,11 @@
 
 export type RootStackParamList = {
   Root: undefined;
+  ChatRoom: {
+    id: String;
+    name: String;
+    imageUri: String;
+  };
   NotFound: undefined;
 };
 

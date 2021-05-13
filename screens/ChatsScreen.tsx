@@ -12,7 +12,7 @@ export default function TabTwoScreen() {
       <FlatList
         data={ChatRooms}
         renderItem={({ item }) => <ChatListItem chatRoom={item} />}
-        keyExtractor={(item, index) => `${item.id}`}
+        keyExtractor={(item) => `${item.id}`}
       />
     </View>
   );
